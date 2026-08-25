@@ -1,0 +1,39 @@
+paths:
+  dataset_root: "./data"
+  output_root: "./results"
+  videos_dir: "./data/videos"
+  videos_zip: "./data/videos.zip"
+
+experiment:
+  seed: 42
+  tasks: ["species", "behavior"]
+  models: ["resnet18", "mobilenet_v2", "efficientnet_b0", "densenet121"]
+  folds: 5
+  alpha: 0.05
+
+classification:
+  samples_per_class: 35
+  max_total_samples: 700
+  image_size: 160
+  batch_size: 16
+  epochs: 5
+  learning_rate: 0.001
+  pretrained: true
+  strict_pretrained: true
+
+analysis:
+  bbox_stats_sample_size: 15000
+
+# Detection is deliberately kept separate from crop classification.
+detection:
+  backbone: "mobilenet_v2"
+  image_size: 480
+  batch_size: 2
+  epochs: 6
+  frames_per_video: 6
+  max_frames: 450
+  test_fraction: 0.20
+  score_threshold: 0.50
+  learning_rate: 0.005
+  momentum: 0.9
+  weight_decay: 0.0005

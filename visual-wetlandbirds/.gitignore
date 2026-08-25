@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Dataset and large artifacts
+/data/*.csv
+/data/*.json
+/data/*.zip
+/data/videos/
+/data/Videos/
+/data/videos_extracted/
+
+# Generated results and checkpoints
+/results/**
+!/results/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.log

@@ -1,0 +1,4 @@
+cff-version: 1.2.0
+title: "Visual WetlandBirds — Reproducible Benchmark and Statistical Analysis"
+type: software
+message: "If this repository is used, please cite the project report and original Visual WetlandBirds dataset publication once their bibliographic details are added."
