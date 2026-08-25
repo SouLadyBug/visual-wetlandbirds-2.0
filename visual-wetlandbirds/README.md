@@ -4,7 +4,6 @@
 
 This repository is the cleaned research-codebase derived from three supplied analysis scripts. The source scripts contain data-quality analysis, crop-based CNN benchmarking, cross-validation, OOF predictions, McNemar/Holm-Bonferroni testing, and full-frame Faster R-CNN detection.
 
-**Important:** the project report was not present among the three files available in the supplied workspace, so report-to-code consistency has not been asserted here. Add the report before making claims that depend on its exact wording, tables, or references.
 
 ## Research focus
 
