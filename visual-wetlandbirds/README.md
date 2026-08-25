@@ -103,16 +103,4 @@ The supplied scripts construct crop samples by reading video frames and bounding
 
 The default seed is `42`. Experiment settings live in `configs/config.yaml`. Results should be treated as protocol-specific estimates, not universal model rankings.
 
-## Scientific cautions
 
-The supplied detection implementation used a home-grown VOC-style AP calculation while comparing against literature values reported for YOLOv9. These metrics should **not** be presented as perfectly protocol-identical until the paper's exact evaluation definition and implementation are verified. The final report should make this limitation explicit.
-
-The original crop-classification scripts use `StratifiedKFold` over individual samples. Because samples can originate from the same video, this can permit video-level leakage. The final repository therefore does not label that procedure as leakage-free without further evidence. Detection is explicitly grouped by video.
-
-## Results
-
-No experimental results are fabricated by this repository. Generated results belong under `results/` and should be traceable to a configuration and run log.
-
-## License and citation
-
-Add the project's actual license and the exact dataset/paper citation after the supplied report and source publication details have been provided.
